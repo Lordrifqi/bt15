@@ -28,12 +28,12 @@ global.sp = '⭔'
 global.mess = {
     success: '✓ *Success Ngab*',
     admin: '*Fitur Khusus Admin Group Cok*‼️',
-    botAdmin: '*Bot Harus Menjadi Admin Terlebih Dahulu!*',
-    owner: '*Lu siapa Cok?*',
+    botAdmin: '*Bot Aj Bukan Admin Cok"!*',
+    owner: '*Lu siapa Cok!Owner gw*',
     group: '*Fitur Digunakan Hanya Untuk Group!*',
     private: '*Fitur Digunakan Hanya Untuk Private Chat!*',
     bot: '*Fitur Khusus Pengguna Nomor Bot*',
-    wait: '*Loading...*',
+    wait: '*Tunggu Sebentar Ya Sayang...*',
     endLimit: '*Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12*',
 }
 global.limitawal = {
