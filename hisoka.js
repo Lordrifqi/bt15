@@ -444,7 +444,7 @@ Selama ${clockString(new Date - user.afkTime)}
                 let user = global.db.data.users[m.sender]
                 user.afkTime = + new Date
                 user.afkReason = text
-                m.reply(`${m.pushName} Telah Afk${text ? ': ' + text : ''}`)
+                m.reply(`${m.pushName} *Telah Afk*${text ? ': ' + text : ''}`)
             }
             break	
         case 'ttc': case 'ttt': case 'tictactoe': {
@@ -523,9 +523,9 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             let id = 'suit_' + new Date() * 1
             let caption = `_*SUIT PvP*_
 
-@${m.sender.split`@`[0]} menantang @${m.mentionedJid[0].split`@`[0]} untuk bermain suit
+@${m.sender.split`@`[0]} *menantang* @${m.mentionedJid[0].split`@`[0]} *untuk bermain suit*
 
-Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
+*Silahkan* @${m.mentionedJid[0].split`@`[0]} *untuk ketik terima/tolak*`
             this.suit[id] = {
             chat: await hisoka.sendText(m.chat, caption, m, { mentions: parseMention(caption) }),
             id: id,
@@ -540,11 +540,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 5k Per Group via dana 1 Month\n⭔ 10k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Dana/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6285822347348 (Owner)\n\nDonate For Me` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hallo Kak ${m.pushName}*\n\n *Owner saya Open sewa bot*\n⭔ *10k Per Group via dana 1 Bulan*\n⭔ *10k via pulsa per 1 Bulan*\n\n Premium Price Bot\n\n *Donasi Donk Terserah mau berapa,Bisa via Dana/pulsa*\n\n *info lebih lanjut, *Bisa chat owner saya*\nhttps://wa.me/6285822347348 (Owner)\n\nDonate For Me` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('Script : https://github.com/sahrull11/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : 6285822347348 \n\n\n\n Dont Forget Donate')
+                m.reply('Script : https://github.com/sahrull11/Hisoka-Morou\n\n *Jangan Lupa kasih Star*\n\nDonate : 6285822347348 \n\n\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
@@ -712,12 +712,12 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `Ciee yang Jadian💖 Jangan lupa Donasi Ke Arull🗿
+            let jawab = `Ciee yang Jadian💖 Jangan lupa Donasi Ke *Arull*🗿
 
 @${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
             let menst = [orang, jodoh]
             let buttons = [
-                        { buttonId: 'jadian', buttonText: { displayText: 'Jodohku' }, type: 1 }
+                        { buttonId: 'jadian', buttonText: { displayText: 'Jadian' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: menst})
             }
@@ -1036,9 +1036,9 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
                 if (args[0] === 'close'){
-                    await hisoka.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`Sukses Menutup Group`)).catch((err) => m.reply(jsonformat(err)))
+                    await hisoka.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`*Sukses Menutup Group*`)).catch((err) => m.reply(jsonformat(err)))
                 } else if (args[0] === 'open'){
-                    await hisoka.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`Sukses Membuka Group`)).catch((err) => m.reply(jsonformat(err)))
+                    await hisoka.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`*Sukses Membuka Group*`)).catch((err) => m.reply(jsonformat(err)))
                 } else {
                 let buttons = [
                         { buttonId: 'group open', buttonText: { displayText: 'Open' }, type: 1 },
@@ -1054,9 +1054,9 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
              if (args[0] === 'open'){
-                await hisoka.groupSettingUpdate(m.chat, 'unlocked').then((res) => m.reply(`Sukses Membuka Edit Info Group`)).catch((err) => m.reply(jsonformat(err)))
+                await hisoka.groupSettingUpdate(m.chat, 'unlocked').then((res) => m.reply(`*Sukses Membuka Edit Info Group*`)).catch((err) => m.reply(jsonformat(err)))
              } else if (args[0] === 'close'){
-                await hisoka.groupSettingUpdate(m.chat, 'locked').then((res) => m.reply(`Sukses Menutup Edit Info Group`)).catch((err) => m.reply(jsonformat(err)))
+                await hisoka.groupSettingUpdate(m.chat, 'locked').then((res) => m.reply(`*Sukses Menutup Edit Info Group*`)).catch((err) => m.reply(jsonformat(err)))
              } else {
              let buttons = [
                         { buttonId: 'editinfo open', buttonText: { displayText: 'Open' }, type: 1 },
@@ -1146,8 +1146,8 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Github Arull',
-                                    url: 'https://github.com/sahrull11/Hisoka-Morou'
+                                    displayText: 'Grub Ofc ArullBotzMD',
+                                    url: 'https://chat.whatsapp.com/LDN0EeJfASs0lbUhJsOJu1'
                                 }
                             }, {
                                 callButton: {
@@ -1185,8 +1185,8 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Github Arull',
-                                    url: 'https://github.com/sahrull11/Hisoka-Morou'
+                                    displayText: 'Grub Ofc ArullBotzMD',
+                                    url: 'https://chat.whatsapp.com/LDN0EeJfASs0lbUhJsOJu1'
                                 }
                             }, {
                                 callButton: {
@@ -2491,13 +2491,13 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             case 'public': {
                 if (!isCreator) throw mess.owner
                 hisoka.public = true
-                m.reply('Sukse Change To Public Usage')
+                m.reply('*Sukse Change To Public Usage*')
             }
             break
             case 'self': {
                 if (!isCreator) throw mess.owner
                 hisoka.public = false
-                m.reply('Sukses Change To Self Usage')
+                m.reply('*Sukses Change To Self Usage*')
             }
             break
             case 'ping': case 'botstatus': case 'statusbot': {
@@ -3045,8 +3045,8 @@ let capt = `⭔ Title: ${judul}
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Github Arull',
-                                    url: 'https://github.com/sahrull11/Hisoka-Morou'
+                                    displayText: 'Grub Ofc ArullBotzMD',
+                                    url: 'https://chat.whatsapp.com/LDN0EeJfASs0lbUhJsOJu1'
                                 }
                             }, {
                                 callButton: {
