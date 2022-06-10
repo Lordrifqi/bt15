@@ -80,10 +80,10 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
             if (typeof chats !== 'object') global.db.data.chats[m.chat] = {}
             if (chats) {
                 if (!('mute' in chats)) chats.mute = false
-                if (!('antilink' in chats)) chats.antilink = false
+                if (!('antilink' in chats)) chats.antilink = true
             } else global.db.data.chats[m.chat] = {
                 mute: false,
-                antilink: false,
+                antilink: true,
             }
 		
 	    let setting = global.db.data.settings[botNumber]
@@ -144,14 +144,14 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
-        m.reply(`「 ANTI LINK 」\n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
-        if (!isBotAdmins) return m.reply(`Ehh bot gak admin T_T`)
+        m.reply(`「 *ANTI LINK* 」\n\n*Kamu terdeteksi mengirim link group*, *maaf kamu akan di kick !*`)
+        if (!isBotAdmins) return m.reply(`*Bot aja bukan admin anj*`)
         let gclink = (`https://chat.whatsapp.com/`+await hisoka.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return m.reply(`Ehh maaf gak jadi, karena kamu ngirim link group ini`)
-        if (isAdmins) return m.reply(`Ehh maaf kamu admin`)
-        if (isCreator) return m.reply(`Ehh maaf kamu owner bot ku`)
+        if (isgclink) return m.reply(`*maaf gak jadi, karena kamu ngirim link group ini*`)
+        if (isAdmins) return m.reply(`*maaf kamu admin*`)
+        if (isCreator) return m.reply(`*maaf kamu owner bot ku*`)
         hisoka.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
@@ -540,11 +540,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6288292024190 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://www.paypal.me/Cakhaho\n⭔ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 5k Per Group via dana 1 Month\n⭔ 10k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Dana/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6285822347348 (Owner)\n\nDonate For Me` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : 6281615075793 (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
+                m.reply('Script : https://github.com/sahrull11/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : 6285822347348 \n\n\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
@@ -712,7 +712,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `Ciee yang Jadian💖 Jangan lupa pajak jadiannya🐤
+            let jawab = `Ciee yang Jadian💖 Jangan lupa Donasi Ke Arull🗿
 
 @${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
             let menst = [orang, jodoh]
@@ -1072,13 +1072,13 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
                 if (args[0] === "on") {
-                if (db.data.chats[m.chat].antilink) return m.reply(`Sudah Aktif Sebelumnya`)
+                if (db.data.chats[m.chat].antilink) return m.reply(`*Sudah Aktif kak Sebelumnya*`)
                 db.data.chats[m.chat].antilink = true
-                m.reply(`Antilink Aktif !`)
+                m.reply(`*Antilink Sekarang Aktif !*`)
                 } else if (args[0] === "off") {
-                if (!db.data.chats[m.chat].antilink) return m.reply(`Sudah Tidak Aktif Sebelumnya`)
+                if (!db.data.chats[m.chat].antilink) return m.reply(`*Sudah Tidak Aktif Sebelumnya*`)
                 db.data.chats[m.chat].antilink = false
-                m.reply(`Antilink Tidak Aktif !`)
+                m.reply(`*Antilink Sekarang Tidak Aktif !*`)
                 } else {
                  let buttons = [
                         { buttonId: 'antilink on', buttonText: { displayText: 'On' }, type: 1 },
@@ -1146,13 +1146,13 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Github Arull',
+                                    url: 'https://github.com/sahrull11/Hisoka-Morou'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    displayText: 'Number Arull',
+                                    phoneNumber: '+6285822347348'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1170,7 +1170,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `「 Broadcast Bot 」\n\n${text}`
+                      let txt = `「 *Broadcast Bot* 」\n\n${text}`
                       hisoka.send5ButImg(i, txt, hisoka.user.name, global.thumb, btn)
                     }
                 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
@@ -1185,13 +1185,13 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Github Arull',
+                                    url: 'https://github.com/sahrull11/Hisoka-Morou'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    displayText: 'Number Arull',
+                                    phoneNumber: '+6285822347348'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1209,7 +1209,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `「 Broadcast Bot 」\n\n${text}`
+                      let txt = `「 *Broadcast Bot* 」\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
 		}
 		m.reply('Sukses Broadcast')
@@ -1316,7 +1316,8 @@ break
 	    break
 	       case 'attp': case 'ttp': {
            if (!text) throw `Example : ${prefix + command} text`
-           await hisoka.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'hisoka', 'morou', m, {asSticker: true})
+           await hisoka.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'hisoka', 'morou', m, {asSticker: true})
+
          }
          break
 	       case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stikermeme': {
@@ -3044,13 +3045,13 @@ let capt = `⭔ Title: ${judul}
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Github Arull',
+                                    url: 'https://github.com/sahrull11/Hisoka-Morou'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    displayText: 'Number Arull',
+                                    phoneNumber: '+6285822347348'
                                 }
                             }, {
                                 quickReplyButton: {
