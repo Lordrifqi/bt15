@@ -1113,7 +1113,7 @@ break
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 let response = await hisoka.groupInviteCode(m.chat)
-                hisoka.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nLink Group : ${groupMetadata.subject}`, m, { detectLink: true })
+                hisoka.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\n👾Link Group : ${groupMetadata.subject}`, m, { detectLink: true })
             }
             break
             case 'ephemeral': {
@@ -1264,19 +1264,19 @@ break
              }
              break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
-            if (!quoted) throw `Balas Video/Image Dengan Caption ${prefix + command}`
+            if (!quoted) throw `*Balas Video/Image Dengan Caption* ${prefix + command}`
             m.reply(mess.wait)
                     if (/image/.test(mime)) {
                 let media = await quoted.download()
                 let encmedia = await hisoka.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
                 await fs.unlinkSync(encmedia)
             } else if (/video/.test(mime)) {
-                if ((quoted.msg || quoted).seconds > 11) return m.reply('Maksimal 10 detik!')
+                if ((quoted.msg || quoted).seconds > 11) return m.reply('*Maksimal 10 detik!*')
                 let media = await quoted.download()
                 let encmedia = await hisoka.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
                 await fs.unlinkSync(encmedia)
             } else {
-                throw `Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Video 1-9 Detik`
+                throw `*Kirim Gambar/Video Dengan Caption* ${prefix + command}\nDurasi *Video 1-9 Detik*`
                 }
             }
             break
@@ -2726,7 +2726,8 @@ let capt = `⭔ Title: ${judul}
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `┌──⭓ *Group Menu*
+                anu = `Hallo Kak *${pushname}!* Silahkan dilihat menunya🤗
+┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
 │⭔ ${prefix}ephemeral [option]
