@@ -2726,7 +2726,7 @@ let capt = `⭔ Title: ${judul}
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `Hallo Kak *${pushname}!* Selamat ${salam} 
+                anu = `Hallo Kak *${pushname}!* 
 Saya *${namebot}*, Assisten *ArullOfc* Bot Ini Adalah Beta Multi-Device WhatsApp.
 Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
 
