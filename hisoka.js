@@ -2726,7 +2726,42 @@ let capt = `⭔ Title: ${judul}
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `Hallo Kak *${pushname}!* Silahkan dilihat menunya🤗
+                anu = `Hallo Kak *${pushname}!* Selamat ${salam} 
+Saya *${namebot}*, Assisten *ArullOfc* Bot Ini Adalah Beta Multi-Device WhatsApp.
+Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
+
+❏ *Info User*
+> Username : *${pushname}!*
+> Limit User : *${global.db.users[m.sender].limit}*
+> Role User : *${role}*
+────────────
+❏ *Info Creator*
+> Name : *ArullOfc*
+> Nomor : *085822347348*
+> Umur : *18+*
+> Region : *Indonesia 🇲🇨*
+> Hobyy : *Gtw*
+> Made in : *Kalimantan Selatan*
+> Nama Asli : *Sahrull... Private*
+────────────
+❏ *Info Server*
+> Tanggal Server : *${jangwak}*
+> Database : *MongoDB*
+> Waktu Server : *${time}*
+> User Server : *${jumlahUser}*
+────────────
+❏ *Jam Indonesia*
+> WIB : *${moment().utcOffset('+0700').format('HH:mm')}*
+> WITA : *${moment().utcOffset('+0800').format('HH:mm')}*
+> WIT : *${moment().utcOffset('+0900').format('HH:mm')}*
+────────────
+❏ *Info Pengguna*
+> Uptime : *${runtime(process.uptime())}*
+> Total Hit Server : *${jumlahcmd}*
+> Library : *Baileys-Md*
+> Total Hit Today : *${jumlahharian}*
+└────────────
+
 ┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
