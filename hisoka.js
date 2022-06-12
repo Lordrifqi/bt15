@@ -2728,8 +2728,11 @@ let capt = `⭔ Title: ${judul}
             case 'list': case 'menu': case 'help': case '?': {
                 anu = `Hallo Kak *${pushname}!* 
 Bot Ini Adalah Beta Multi-Device WhatsApp.
-Silahkan Lihat Menu Dibawah🤗
 
+❏ *Info User*
+> Username : *${pushname}!*
+> Limit User : *${global.db.users[m.sender].limit}*
+> Role User : *${role}*
 ────────────
 ❏ *Info Creator*
 > Name : *ArullOfc*
