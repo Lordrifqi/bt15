@@ -2729,11 +2729,6 @@ let capt = `⭔ Title: ${judul}
                 anu = `Hallo Kak *${pushname}*! 
 Bot Ini Adalah Beta Multi-Device WhatsApp.
 
-❏ *Info User*
-> Username : *${pushname}!*
-└───────⭓
-_ArullOfc_
-───────⭓
 ❏ *Info Creator*
 > Name : *ArullOfc*
 > Nomor : *https://wa.me/6285822347348*
@@ -2783,7 +2778,6 @@ _ArullOfc_
 │
 └───────⭓
 _ArullOfc_
-
 ┌──⭓ *Downloader Menu*
 │
 │⭔ ${prefix}tiktoknowm [url]
