@@ -2731,8 +2731,13 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 
 ❏ *Info User*
 > Username : *${pushname}!*
-> Role User : *${role}*
-────────────
+└────────────
+❏ *Info Pengguna*
+> Uptime : *${runtime(process.uptime())}*
+> Total Hit Server : *${jumlahcmd}*
+> Library : *Baileys-Md*
+> Total Hit Today : *${jumlahharian}*
+└────────────
 ❏ *Info Server*
 > Tanggal Server : *${jangwak}*
 > Database : *MongoDB*
