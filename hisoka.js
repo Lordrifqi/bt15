@@ -2726,14 +2726,15 @@ let capt = `⭔ Title: ${judul}
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `Hallo Kak *${pushname}!* Bot Ini Adalah Beta Multi-Device WhatsApp.
+                anu = `Hallo Kak *${@user}!* 
+Bot Ini Adalah Beta Multi-Device WhatsApp.
 Silahkan Lihat Menu Dibawah🤗
 
 ────────────
 ❏ *Info Creator*
 > Name : *ArullOfc*
-> Nomor : *085822347348*
-> Umur : *18+*
+> Nomor : *https://wa.me/6285822347348*
+> Umur : *18*
 > Region : *Indonesia 🇲🇨*
 > Hobyy : *Gtw*
 > Made in : *Kalimantan Selatan*
@@ -3056,7 +3057,8 @@ Silahkan Lihat Menu Dibawah🤗
 │⭔ ${prefix}setexif
 │⭔ ${prefix}setmenu [option]
 │
-└───────⭓`
+└───────⭓
+_Donasi Ngab Jangan Ngarep Free Mulu_`
                 let btn = [{
                                 urlButton: {
                                     displayText: 'Grub Ofc ArullBotzMD',
