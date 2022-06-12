@@ -540,11 +540,11 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hallo Kak ${m.pushName}*\n\n *Owner saya Open sewa bot*\n⭔ *10k Per Group via dana 1 Bulan*\n⭔ *10k via pulsa per 1 Bulan*\n\n Premium Price Bot\n\n *Donasi Donk Terserah mau berapa,Bisa via Dana/pulsa*\n\n *info lebih lanjut, *Bisa chat owner saya*\nhttps://wa.me/6285822347348 (Owner)\n\nDonate For Me` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hallo Kak ${m.pushName}*\n\n Owner saya Open sewa bot*\n⭔*10k Per Group via dana 1 Bulan*\n⭔*10k via pulsa per 1 Bulan*\n\n*Donasi Donk Terserah mau berapa,Bisa via Dana/pulsa*\n\n *info lebih lanjut, *Bisa chat owner saya*\nhttps://wa.me/6285822347348 (Owner)\n\n _Awas Lu Bohong_` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('Kalo Mau SC chat *Arull*(My Owner)Cape tau Owner Saya Ngeditny\n\nDonate : 6285822347348 \n\n\n\n Jangan Lupa Donasi')
+                m.reply('https://wa.me/6285822347348')
             }
             break
             case 'chat': {
@@ -1041,8 +1041,8 @@ break
                     await hisoka.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`*Sukses Membuka Group*`)).catch((err) => m.reply(jsonformat(err)))
                 } else {
                 let buttons = [
-                        { buttonId: 'group open', buttonText: { displayText: 'Open' }, type: 1 },
-                        { buttonId: 'group close', buttonText: { displayText: 'Close' }, type: 1 }
+                        { buttonId: 'group open', buttonText: { displayText: 'Open kh?' }, type: 1 },
+                        { buttonId: 'group close', buttonText: { displayText: 'Close kh?' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, `Mode Group`, hisoka.user.name, m)
 
@@ -1059,8 +1059,8 @@ break
                 await hisoka.groupSettingUpdate(m.chat, 'locked').then((res) => m.reply(`*Sukses Menutup Edit Info Group*`)).catch((err) => m.reply(jsonformat(err)))
              } else {
              let buttons = [
-                        { buttonId: 'editinfo open', buttonText: { displayText: 'Open' }, type: 1 },
-                        { buttonId: 'editinfo close', buttonText: { displayText: 'Close' }, type: 1 }
+                        { buttonId: 'editinfo open', buttonText: { displayText: 'Open kh?' }, type: 1 },
+                        { buttonId: 'editinfo close', buttonText: { displayText: 'Close kh?' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, `Mode Edit Info`, hisoka.user.name, m)
 
@@ -1156,8 +1156,8 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
+                                    displayText: 'Donasi Lahh',
+                                    id: 'donasi'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1195,8 +1195,8 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
+                                    displayText: 'Donasi Lahh',
+                                    id: 'donasi'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3076,8 +3076,8 @@ _Donasi Ngab Jangan Ngarep Free Mulu_`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
-                                    id: 'owner'
+                                    displayText: 'Donasi Lahh!',
+                                    id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
