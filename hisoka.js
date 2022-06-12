@@ -2726,24 +2726,14 @@ let capt = `⭔ Title: ${judul}
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `Hallo Kak *${pushname}!* 
+                anu = `Hallo Kak @user!
 Bot Ini Adalah Beta Multi-Device WhatsApp.
 
 ❏ *Info User*
 > Username : *${pushname}!*
-└────────────
-❏ *Info Pengguna*
-> Uptime : *${runtime(process.uptime())}*
-> Total Hit Server : *${jumlahcmd}*
-> Library : *Baileys-Md*
-> Total Hit Today : *${jumlahharian}*
-└────────────
-❏ *Info Server*
-> Tanggal Server : *${jangwak}*
-> Database : *MongoDB*
-> Waktu Server : *${time}*
-> User Server : *${jumlahUser}*
-────────────
+└───────⭓
+_ArullOfc_
+───────⭓
 ❏ *Info Creator*
 > Name : *ArullOfc*
 > Nomor : *https://wa.me/6285822347348*
@@ -2752,8 +2742,8 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 > Hobyy : *Gtw*
 > Made in : *Kalimantan Selatan*
 > Nama Asli : *Sahrull... Private*
-└────────────
-
+└───────⭓
+_ArullOfc_
 ┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
@@ -2778,7 +2768,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}hapusvote
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Webzone Menu*
 │
 │⭔ ${prefix}playstore
@@ -2791,7 +2781,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}drakor
 │
 └───────⭓
-
+_ArullOfc_
 
 ┌──⭓ *Downloader Menu*
 │
@@ -2812,7 +2802,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}soundcloud [url]
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Search Menu*
 │
 │⭔ ${prefix}play [query]
@@ -2827,7 +2817,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}stalk [option] [query]
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Random Menu*
 │
 │⭔ ${prefix}coffe
@@ -2849,7 +2839,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}blowjob (nsfw)
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Text Pro Menu*
 │
 │⭔ ${prefix}3dchristmas
@@ -2885,7 +2875,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}gluetext
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Photo Oxy Menu*
 │
 │⭔ ${prefix}shadow
@@ -2902,7 +2892,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}retrolol
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Ephoto Menu*
 │
 │⭔ ${prefix}ffcover
@@ -2916,7 +2906,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}ytcertificate
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Fun Menu*
 │
 │⭔ ${prefix}simih
@@ -2935,7 +2925,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}suitpvp [@tag]
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Primbon Menu*
 │
 │⭔ ${prefix}nomorhoki
@@ -2970,7 +2960,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}shio
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Convert Menu*
 │
 │⭔ ${prefix}attp
@@ -2992,7 +2982,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}smeme
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Main Menu*
 │
 │⭔ ${prefix}ping
@@ -3007,7 +2997,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}speedtest
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Database Menu*
 │
 │⭔ ${prefix}setcmd
@@ -3020,7 +3010,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}delmsg
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Anonymous Menu*
 │
 │⭔ ${prefix}anonymous
@@ -3029,7 +3019,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}keluar
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Islamic Menu*
 │
 │⭔ ${prefix}iqra
@@ -3039,7 +3029,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}tafsirsurah
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Voice Changer*
 │
 │⭔ ${prefix}bass
@@ -3055,7 +3045,7 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 │⭔ ${prefix}tupai
 │
 └───────⭓
-
+_ArullOfc_
 ┌──⭓ *Owner Menu*
 │
 │⭔ ${prefix}react [emoji]
