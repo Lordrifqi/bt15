@@ -2731,8 +2731,13 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 
 ❏ *Info User*
 > Username : *${pushname}!*
-> Limit User : *${global.db.users[m.sender].limit}*
 > Role User : *${role}*
+────────────
+❏ *Info Server*
+> Tanggal Server : *${jangwak}*
+> Database : *MongoDB*
+> Waktu Server : *${time}*
+> User Server : *${jumlahUser}*
 ────────────
 ❏ *Info Creator*
 > Name : *ArullOfc*
