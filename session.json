@@ -65,8 +65,7 @@
         }
       }
     ],
-    "lastAccountSyncTimestamp": 1655081326,
-    "myAppStateKeyId": "AAAAAKK0"
+    "lastAccountSyncTimestamp": 1655081326
   },
   "keys": {
     "preKeys": {
@@ -405,58 +404,6 @@
           }
         },
         "version": "v1"
-      }
-    },
-    "appStateSyncKeys": {
-      "AAAAAKK0": {
-        "keyData": "V5l2yWXTdnw034kd9W9jyH1pUelp39sgU3au2HxGdKo=",
-        "fingerprint": {
-          "rawId": 1785006664,
-          "currentIndex": 1,
-          "deviceIndexes": [
-            0,
-            1
-          ]
-        },
-        "timestamp": "1655081327266"
-      }
-    },
-    "appStateVersions": {
-      "critical_block": {
-        "version": 1,
-        "hash": {
-          "type": "Buffer",
-          "data": "4eYJ+fU+/1+LqxlzeHwTOpsSwl5bhYtMDlenYJFWnWrW9DojFXW7/sSeA/R3gSFq2MUxKhy22RQzH38v8ZE8uJjWvrP9s/p63APm/Nxx87Pujt2OVNEM7SV1BLWDYQORdZQPL5OXXdiXK3TdTM46n1qeX7DwluzAx9LvHRcFFrw="
-        },
-        "indexValueMap": {
-          "ys0Y1zzHd8oA9XQ5aY4ChTWgacY2I9mF2o/ezA9QTio=": {
-            "valueMac": {
-              "type": "Buffer",
-              "data": "3sQjkoizKDYeMCuDjcMuzuB3xZNtJmPI0mNAQO+jT0g="
-            }
-          },
-          "FM/0/GSRidl1cdbNuo7lbyFZebmBzTFj+H1osGLN7JY=": {
-            "valueMac": {
-              "type": "Buffer",
-              "data": "j+hcKR3JiRl+8bi/eBjXhPUAwb9kTKHmPEldqUmMHME="
-            }
-          }
-        }
-      },
-      "regular": {
-        "version": 1,
-        "hash": {
-          "type": "Buffer",
-          "data": "Gdv4OcjGAMhq4oZRJY4z0uahkxJ1htOTbAECC9O63qRLtcGrnVA8KEMpKQ54KvqYpHnY3w/Y+YlcDXxB4PMuiJKVjlz5b+KwCIgO/2cDFwsYIzvua7eD5Anz1FfcYqiUX+VOXIfmMI85diLGG4trlXI2p75aqP7qeCqEKfSCPeQ="
-        },
-        "indexValueMap": {
-          "eUmxv4njW02SmPVIEDblJ2Tanvid2UltL+JDZHr/XOk=": {
-            "valueMac": {
-              "type": "Buffer",
-              "data": "TXyT0Mp5TeH5gC3WgocVeN6btDAx4miNtE+wiBmTmKU="
-            }
-          }
-        }
       }
     }
   }
