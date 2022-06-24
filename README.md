@@ -1,26 +1,24 @@
 # CATATAN ( NOTE )
-Mulai saat ini, script ini tidak akan dilanjutkan lagi, jika ingin menambah sesuatu lebih baik dibuat pribadi aja, malah keren itu lhu punya tapi yang lain kaga jadi lhu bisa jual tu fitur kalo di publik di script ini mungkin kalian akan rugi sendiri, sudah susah-susah bikin code tapi malah dijual Ama yang cuma modal nyomot doang & dibuat konten yt, yutuber untung yang buat kaga, tapi terserah kalian juga kalo mau pull ya tetep saya ACC
+sc ini hanyalah hasil recode sedikit demi sedikit
+Untuk nyeting wm dan owner di config.js
+Untuk nyeting menu dll,di hisoka.js
 
-Kalo mau jualan normal aja, jangan sampe nipu atau memberi harapan kosong, contohnya "dijual fitur langkah ada storenya 😱", gabaik itu, mau untung boleh tapi jangan sampe merugikan orang lain 
-
-Best Regards. Hisoka
-
-# Hisoka-Morou
+#ArullBotzMD
 Script WhatsApp Bot Multi Device
 
 ## NOTE
 This Script is for everyone, not for Sale. Jika dijual neraka menunggumu brother !
 
 <p align="center">
-	<img src="https://telegra.ph/file/09cc0981ccf07754d0af6.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="https://telegra.ph/file/a635093499b67c5b0d32e.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 <h1 align="center">Hisoka-Morou</h1>
 
 This is Script of WhatsApp multi device, working with [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
 
 ## My Project
-* New script to replace this script [`look here`](https://github.com/zhwzein/Killua-Zoldyck) (`Support Legacy or Baileys`)
-* WhatsApp Bot normal [`DikaArdnt/Hisoka-Morrow`](https://github.com/DikaArdnt/Hisoka-Morrow)
+* New script to replace this script [`look here`](https://github.com/Warikrr/krizynMDV2) (`MULTI DEVICE `)
+* WhatsApp Bot normal [`DikaArdnt/Hisoka-Morrow`](https://github.com/DikaArdnt/Hisoka-Morrow) (SC ORI)
 * WhatsApp Bot Multi Device [`DikaArdnt/Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
 * WhatsApp Bot Using Library whatsapp-web.js [`hisoka-waweb.js`](https://github.com/Hisoka-Morrou/hisoka-waweb.js/)
 
@@ -33,14 +31,14 @@ This is Script of WhatsApp multi device, working with [`@adiwajshing/baileys`](h
 
 
 ```bash
-git clone https://github.com/DikaArdnt/Hisoka-Morou
+git clone https://github.com/Warikrr/Hisoka-Morou
 cd Hisoka-Morou
 npm install
 ```
 
 ## HOW TO CONNECT TO MONGODB WHEN RUN IN HEROKU
 
-* Create account and database in mongodb atlas [`watch here`](https://youtu.be/rPqRyYJmx2g)
+* Create account and database in mongodb atlas [`watch here`](https://youtu.be/w1iMJS0ib-w)
 * when you already have a database, you just need to take mongourl
 * Put mongourl in Procfile `web: node . --db 'mongourl'`
 * Example `web: node . -- db 'Your Mongo URI'`
@@ -54,7 +52,7 @@ apt update && apt upgrade
 apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
-git clone https://github.com/DikaArdnt/Hisoka-Morou
+git clone https://github.com/Warikrr/Hisoka-Morou
 cd Hisoka-Morou
 npm install
 ```
@@ -72,10 +70,10 @@ $ node .
 ```
 
 ## ❗ Warning
-WhatsApp bot is still in the development stage, so there are a few bugs
-WhatsApp Connection (BETA, not working perfectly)
+Bot WhatsApp masih dalam tahap pengembangan, jadi ada beberapa bug
+Koneksi WhatsApp (BETA, tidak berfungsi dengan sempurna)
 
-Editing Number Owner & session name in [`config.js`](https://github.com/DikaArdnt/Hisoka-Morou/blob/master/config.js)
+Editing Number Owner & session name in [`config.js`](https://github.com/Warikrr/Hisoka-Morou/blob/master/config.js)
 Get Apikey zenz on [`zenz`](https://zenzapi.xyz/pricing)
 
 
@@ -90,12 +88,12 @@ Get Apikey zenz on [`zenz`](https://zenzapi.xyz/pricing)
 * [`zhwzein`](https://github.com/zhwzein)
 * [`CAF-ID`](https://github.com/CAF-ID)
 * [`bintang`](https://github.com/Bintangp02)
+* [`ArullOfc`](https://github.com/Warikrr)
 
 ```Thanks to all who have participated in the development of this script```
 
 
 License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
-Support Me
-* [`Paypal`](https://www.paypal.me/Cakhaho)
-* [`Saweria`](https://saweria.co/DikaArdnt)
+Support Me:
+* [`Saweria`](https://saweria.co/arullOfc)
