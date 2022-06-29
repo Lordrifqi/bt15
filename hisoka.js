@@ -2739,7 +2739,6 @@ Bot Ini Adalah Beta Multi-Device WhatsApp.
 > Nama Asli : *Sahrull... Private*
 └───────⭓
 ~Silahkan Lihat Menu Dibawah^^~
-_ArullOfc_
 ┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
@@ -2764,7 +2763,6 @@ _ArullOfc_
 │⭔ ${prefix}hapusvote
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Webzone Menu*
 │
 │⭔ ${prefix}playstore
@@ -2777,7 +2775,6 @@ _ArullOfc_
 │⭔ ${prefix}drakor
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Downloader Menu*
 │
 │⭔ ${prefix}tiktoknowm [url]
@@ -2797,7 +2794,6 @@ _ArullOfc_
 │⭔ ${prefix}soundcloud [url]
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Search Menu*
 │
 │⭔ ${prefix}play [query]
@@ -2812,7 +2808,6 @@ _ArullOfc_
 │⭔ ${prefix}stalk [option] [query]
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Random Menu*
 │
 │⭔ ${prefix}coffe
@@ -2834,7 +2829,6 @@ _ArullOfc_
 │⭔ ${prefix}blowjob (nsfw)
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Text Pro Menu*
 │
 │⭔ ${prefix}3dchristmas
@@ -2870,7 +2864,6 @@ _ArullOfc_
 │⭔ ${prefix}gluetext
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Photo Oxy Menu*
 │
 │⭔ ${prefix}shadow
@@ -2887,7 +2880,6 @@ _ArullOfc_
 │⭔ ${prefix}retrolol
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Ephoto Menu*
 │
 │⭔ ${prefix}ffcover
@@ -2901,7 +2893,6 @@ _ArullOfc_
 │⭔ ${prefix}ytcertificate
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Fun Menu*
 │
 │⭔ ${prefix}simih
@@ -2920,7 +2911,6 @@ _ArullOfc_
 │⭔ ${prefix}suitpvp [@tag]
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Primbon Menu*
 │
 │⭔ ${prefix}nomorhoki
@@ -2955,7 +2945,6 @@ _ArullOfc_
 │⭔ ${prefix}shio
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Convert Menu*
 │
 │⭔ ${prefix}attp
@@ -2977,7 +2966,6 @@ _ArullOfc_
 │⭔ ${prefix}smeme
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Main Menu*
 │
 │⭔ ${prefix}ping
@@ -2992,7 +2980,6 @@ _ArullOfc_
 │⭔ ${prefix}speedtest
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Database Menu*
 │
 │⭔ ${prefix}setcmd
@@ -3005,7 +2992,6 @@ _ArullOfc_
 │⭔ ${prefix}delmsg
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Anonymous Menu*
 │
 │⭔ ${prefix}anonymous
@@ -3014,7 +3000,6 @@ _ArullOfc_
 │⭔ ${prefix}keluar
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Islamic Menu*
 │
 │⭔ ${prefix}iqra
@@ -3024,7 +3009,6 @@ _ArullOfc_
 │⭔ ${prefix}tafsirsurah
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Voice Changer*
 │
 │⭔ ${prefix}bass
@@ -3040,7 +3024,6 @@ _ArullOfc_
 │⭔ ${prefix}tupai
 │
 └───────⭓
-_ArullOfc_
 ┌──⭓ *Owner Menu*
 │
 │⭔ ${prefix}react [emoji]
@@ -3059,12 +3042,12 @@ _ArullOfc_
 _Donasi Ngab Jangan Ngarep Free Mulu_`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Grub Ofc ArullBotzMD',
+                                    displayText: 'Grub Bot',
                                     url: 'https://chat.whatsapp.com/LDN0EeJfASs0lbUhJsOJu1'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Arull',
+                                    displayText: 'Number Owner',
                                     phoneNumber: '+6285822347348'
                                 }
                             }, {
